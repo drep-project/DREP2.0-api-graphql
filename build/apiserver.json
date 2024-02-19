@@ -1,0 +1,49 @@
+{
+    "app_name": "My GraphQL API for DREP testnet",
+    "me": {
+        "address": "0xE8E2ab527D1fDbCe570B221977BB5c3f12dFa1DA",
+        "pkey": "0xaa682338447d15ac4462d938716c120d085a0db81d3945b18017ae0788a121a7"
+    },
+    "server": {
+        "bind": "0.0.0.0:16761",
+        "peers": [],
+        "origin": "http://192.168.1.103:8080",
+        "cors_origins": [
+            "*"
+        ],
+        "write_timeout": 30,
+        "resolver_timeout": 240
+    },
+    "node": {
+        "url": "/home/deploy/.drep/testvalidator1/drep.ipc"
+    },
+    "p2p": {
+        "bind_udp": "0.0.0.0:19173",
+        "geo_db": "GeoLite2-City.mmdb",
+        "bootstrap": [
+            "enode://1e81b669db1e887022d1bf5b54b8d57d42eed41d3f92a454e89ad6ed2f6699c86aaec360df1eb312e87d3403eb002cbbffdfb7ad48264df9690567886b8694fc@127.0.0.1:5051",
+            "enode://c2ae94aa8b475abce3b6d506f2fe5aed565fc1bf4fb64e1b1f2c68ddb11eb51c2dc57d0173831bb02240c714ccc4fbe6620eb6c2a97b0757aa0d43a8b4877a5f@127.0.0.1:5052",
+            "enode://1573227e9f919c04bb34e8771fd0683feeee961a5165e02427cc3b06fff8250ba124ea8b42cae3fc96f3829344c54fee97355ee263c1facbe136c9e12f65342e@127.0.0.1:5053",
+            "enode://223f4bd0a5d7274b847488988b46ef428a536020a519036de9816c454790391b09569545cdf6e7f6cc2ca6fd1074f8ad8210c81d089ab621525b4b266f2f6bfa@127.0.0.1:5054",
+            "enode://7989d2d9e1ff62de420db86f6d55eb4f7cfd7842c91196d70e3c1fd64bcc7d5bb40241820e2bac5f9f0a5a1e500045b4962a906ee5360bf4c85a1ace385100d4@127.0.0.1:5055"
+        ]
+    },
+    "log": {
+        "level": "Info"
+    },
+    "db": {
+        "url": "mongodb://127.0.0.1:27017",
+        "db": "mainnet"
+    },
+    "compiler": {
+        "temp": "/tmp/solidity",
+        "sol": "/usr/local/bin/solc"
+    },
+    "repository": {
+        "stakers": 1
+    },
+    "staking": {
+        "sfc": "0xFC00FACE00000000000000000000000000000000"
+    },
+    "erc20_tokens_file": "tokens.json"
+}

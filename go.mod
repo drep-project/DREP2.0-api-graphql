@@ -1,6 +1,6 @@
 module fantom-api-graphql
 
-go 1.21
+go 1.19
 
 require (
 	github.com/allegro/bigcache v1.2.1
